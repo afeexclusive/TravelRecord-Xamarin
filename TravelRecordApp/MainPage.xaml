@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="TravelRecordApp.MainPage">
+
+    
+    <StackLayout VerticalOptions="Center"
+                 Margin="25,0">
+        <Image x:Name="landingimg"
+               Margin="0,0,0,50"
+               Aspect="AspectFit"
+               HorizontalOptions="FillAndExpand"/>
+        <!-- Place new controls here -->
+        <Label Text="Welcome Login Here"
+               Margin="16,16,16,0"
+           HorizontalOptions="Center"
+           VerticalOptions="Center" />
+        <Entry x:Name="useremail"
+               Keyboard="Email"
+               Placeholder="Enter email here"
+               TextColor="{StaticResource Blue}" />
+        <Entry x:Name="userpassword"
+               IsPassword="True"
+               Placeholder="Enter Password"
+               TextColor="{StaticResource Blue}"/>
+        <Button x:Name="loginBtn"
+                Margin="0,50,0,0"
+                Text="Sign In"
+                Clicked="loginBtn_Clicked"
+                />
+    </StackLayout>
+
+</ContentPage>
